@@ -4,14 +4,14 @@
   height: 40px;
 
   position: relative;
-  margin: 100px auto;
+ 
 }
 
 .double-bounce1, .double-bounce2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #375187;
+  background-color: #fff;
   opacity: 0.6;
   position: absolute;
   top: 0;

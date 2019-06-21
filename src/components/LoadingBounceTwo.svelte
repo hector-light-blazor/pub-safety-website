@@ -1,6 +1,6 @@
 <style>
 .spinner {
-  margin: 100px auto 0;
+ 
   width: 70px;
   text-align: center;
 }
@@ -8,7 +8,7 @@
 .spinner > div {
   width: 18px;
   height: 18px;
-  background-color: #375187;
+  background-color: #fff;
 
   border-radius: 100%;
   display: inline-block;

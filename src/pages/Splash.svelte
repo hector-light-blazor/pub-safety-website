@@ -7,19 +7,13 @@
     import LoadingRect from "../components/LoadingRect.svelte";
     import LoadingSpinner from "../components/LoadingSpinner.svelte";
     
-    let mobile;
-     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        mobile = true;
-    }else {
-        mobile = false;
-    }
 
     let choose = Math.floor(Math.random() * 7);
     console.log(choose);
 
 </script>
 
-<Background {mobile} src={"./assets/Splash.webp"}>
+<Background >
     {#if choose == 0}
          
          <LoadingBounce />

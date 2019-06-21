@@ -2,8 +2,8 @@
         .spinner {
             width: 40px;
             height: 40px;
-            background-color: #375187;
-            margin: 100px auto;
+            background-color: #fff;
+            
             -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
             animation: sk-rotateplane 1.2s infinite ease-in-out;
     }
@@ -33,7 +33,7 @@
 
 <div style="position: absolute; width: 80px; height: 80px; top: 50%; left: 50%; margin-left: -40px; margin-top: -40px;">
     <div  class="spinner"></div>
-    <label>Loading Please Wait</label>
+   
 
 </div>
 

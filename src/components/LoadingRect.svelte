@@ -1,7 +1,7 @@
 
 <style>
     .spinner {
-  margin: 100px auto;
+ 
   width: 50px;
   height: 40px;
   text-align: center;
@@ -9,7 +9,7 @@
 }
 
 .spinner > div {
-  background-color: #375187;
+  background-color: #fff;
   height: 100%;
   width: 6px;
   display: inline-block;
