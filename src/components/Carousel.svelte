@@ -32,7 +32,17 @@
 
             
         }, 5000);
-	});
+    });
+    
+    function changePic(index) {
+        fadeOut = false;
+        images[currentIndex].selected = false;
+        currentIndex = index;
+        images[index].selected = true;
+         setTimeout(() => {
+                fadeOut = true;
+            }, 200);
+    }
 </script>
 <style>
     img{
@@ -41,6 +51,7 @@
     }
     .rounded {
         border-radius: 20px;
+        cursor: pointer;
         width: 20px;height: 20px;
         margin-bottom: 10px;
          
@@ -61,9 +72,9 @@
 <div style="height: 600px; width:100%">
     <div style="position: absolute;left: 16%;margin-top: 20px; height: 240px; width: 100px; z-index:2;" >
         <div style="float: left;width: 50px;">
-            {#each images as image}
+            {#each images as image, i}
                 <!-- content here -->
-                <div class:red-round={image.selected} class:blue-round={!image.selected}  class="rounded"></div>
+                <div on:click="{()=> {changePic(i)}}" class:red-round={image.selected} class:blue-round={!image.selected}  class="rounded"></div>
             {/each}
         </div>
         <div style="float: left"><div style="height: 120px;width:0px; " class="blue-round">

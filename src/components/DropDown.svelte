@@ -13,9 +13,9 @@
         bottom: 24px;
         color: white;
         height: 20px;
-        width: 14%;
-        margin-right: 44px;
-        padding: 10px;
+        width: 24.54%;
+        margin-right: 42px;
+        padding: 8px;
         text-align: center;
         cursor: pointer;
     }
@@ -32,6 +32,21 @@
         width: 100%;
         padding: 0;
     }
+
+     @media only screen and (min-width: 1110px) {
+            .header-fly{
+               
+                width: 300px;
+                
+            }
+     }
+
+     @media only screen and (max-width: 767px) {
+            .header-fly{
+               
+               display: none;
+            }
+     }
 </style>
 <div  on:click="{() => {show = !show; }}" class="header-fly" style="background: {color}">
     {title}
