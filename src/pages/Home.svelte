@@ -8,6 +8,7 @@
         background: #fff;
         width: 100%;
         height: 110px;
+        z-index: 3;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     }
     .sub {
@@ -22,68 +23,39 @@
     }
     ul li {
         padding-left: 20px;
-		display: inline;
+		   display: inline;
     }
 
     li{
         cursor: pointer;
     }
       
-
-
-    li:nth-of-type(1):hover ~ .underbar {
-        left: 12px;
-        width: 62px;
-        background: rgba(200,100,100,1);
-        display: block;
+    li:hover {
+      font-size: 20px;
+      color: #7B120E;
     }
 
-    li:nth-of-type(2):hover ~ .underbar {
-        left: 80px;
-        width: 190px;
-        background: rgba(200,100,100,1);
-         display: block;
-    }
-    li:nth-of-type(3):hover ~ .underbar {
-        left: 272px;
-        width: 88px;
-        background: rgba(200,100,100,1);
-         display: block;
-    }
-    li:nth-of-type(4):hover ~ .underbar {
-        left: 366px;
-        width: 94px;
-        background: rgba(200,100,100,1);
-         display: block;
-    }
-    li:nth-of-type(5):hover ~ .underbar {
-        left: 466px;
-        width: 226px;
-        background: rgba(200,100,100,1);
-         display: block;
-    }
-    li:nth-of-type(6):hover ~ .underbar {
-        left: 698px;
-        width: 165px;
-        background: rgba(200,100,100,1);
-         display: block;
-    }
-    li:nth-of-type(7):hover ~ .underbar {
-        left: 870px;
-        width: 86px;
-        background: rgba(200,100,100,1);
-         display: block;
+    .menu {
+      float: right; padding-right: 50px;
     }
 
-    .underbar{
-        width: 0;
-        height: 5px;
-        background: rgba(100,100,200,0);
+    .logo {
+      position: absolute;height: 2px;width: 120px;margin-left: 100px;bottom: 106px;
+    }
+
+    @media only screen and (max-width: 1370px) {
+      .menu {
         display: none;
-        position: relative;
-        transition: 0.5s ease;
-}
+      }
 
+      .logo {
+        position: absolute;
+        height: 2px;width: 120px;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 106px;
+      }
+  }
 
 
 </style>
@@ -91,10 +63,10 @@
     <div class="sub">
     heloo
     </div>
-    <div style="position: relative;height: 2px;width: 120px;margin-left: 40px;margin-top: 6px;">
-        <img width="120" height="120" src="assets/public_safety_logo.webp" alt="Safety">
+    <div class="logo">
+        <img width="140" height="140" src="assets/public_safety_logo.webp" alt="Safety">
     </div>
-    <div style="float: right; padding-right: 50px;">
+    <div class="menu">
         <ul>
             <li>HOME</li>
             <li>LOCATION VALIDATION</li>
@@ -103,7 +75,7 @@
             <li>SYSTEM & PSAP OPERATIONS</li>
             <li>PUBLIC EDUCATION</li>
             <li>TRAINING</li>
-            <div class="underbar"></div>
+            
         </ul>
     </div>
     
