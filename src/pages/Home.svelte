@@ -31,8 +31,28 @@
     }
       
     li:hover {
-      font-size: 20px;
+      transform: scale(3);
+      -webkit-transform: scale(2.3);
+      -ms-transform: scale(3);
       color: #7B120E;
+    }
+
+    .center {
+      margin-top: 20px;
+      padding: 10px;
+    }
+    p {
+      text-align:center;
+      color: #D5AF34;
+    }
+
+    .grow {
+      transition: all .2s ease-in-out;
+    }
+
+    .grow:hover {
+      transition: all 0.2s ease-in-out;
+      transform: scale(4);
     }
 
     .menu {
@@ -61,14 +81,14 @@
 </style>
 <header>
     <div class="sub">
-    heloo
+   
     </div>
     <div class="logo">
         <img width="140" height="140" src="assets/public_safety_logo.webp" alt="Safety">
     </div>
     <div class="menu">
         <ul>
-            <li>HOME</li>
+            <li class="grow">HOME</li>
             <li>LOCATION VALIDATION</li>
             <li>MAPPING</li>
             <li>DATABASE</li>
@@ -84,53 +104,8 @@
 
 <Carousel />
 
-<div>
+<div class="center">
 
-  test
+  <p>The 9-1-1 Department of the Lower Rio Grande Valley Development Councilprovides support services and equipment for 9-1-1 Call Centers in Hidalgo and Willacy Counties. Our 18 Public Safety Answering Points (PSAPs) are located at (and staffed by) area police departments, fire stations, and the sheriffs office.</p>
 
-</div>
-<div class="container-fluid bg-1 text-center">
-  <h3>Who Am I?</h3>
-  <img src="bird.jpg" class="img-circle" alt="Bird">
-  <h3>I'm an adventurer</h3>
-</div>
-
-<div class="container-fluid bg-2 text-center">
-  <h3>What Am I?</h3>
-  <p>Lorem ipsum..</p>
-</div>
-
-<div class="container-fluid bg-3 text-center">
-  <h3>Where To Find Me?</h3>
-  <p>Lorem ipsum..</p>
-</div>
-<div class="container-fluid bg-1 text-center">
-  <h3>Who Am I?</h3>
-  <img src="bird.jpg" class="img-circle" alt="Bird">
-  <h3>I'm an adventurer</h3>
-</div>
-
-<div class="container-fluid bg-2 text-center">
-  <h3>What Am I?</h3>
-  <p>Lorem ipsum..</p>
-</div>
-
-<div class="container-fluid bg-3 text-center">
-  <h3>Where To Find Me?</h3>
-  <p>Lorem ipsum..</p>
-</div>
-<div class="container-fluid bg-1 text-center">
-  <h3>Who Am I?</h3>
-  <img src="bird.jpg" class="img-circle" alt="Bird">
-  <h3>I'm an adventurer</h3>
-</div>
-
-<div class="container-fluid bg-2 text-center">
-  <h3>What Am I?</h3>
-  <p>Lorem ipsum..</p>
-</div>
-
-<div class="container-fluid bg-3 text-center">
-  <h3>Where To Find Me?</h3>
-  <p>Lorem ipsum..</p>
 </div>

@@ -31,6 +31,11 @@
         list-style: none;
         width: 100%;
         padding: 0;
+        text-align: left;
+    }
+    
+    ul >li {
+        padding: 5px 0;
     }
 
      @media only screen and (min-width: 1110px) {
