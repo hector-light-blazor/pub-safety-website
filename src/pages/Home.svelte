@@ -1,5 +1,6 @@
 <script>
     import Carousel from "../components/Carousel.svelte";
+    import Footer from "../components/Footer.svelte";
 </script>
 <style>
 
@@ -11,11 +12,24 @@
         z-index: 3;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     }
+
+    .header-topstrip-wide {
+    width: 100%;
+    float: left;
+    margin-left: 14%;
+    padding: 0;
+}
     .sub {
         width: 100%;
         height: 40px;
         background: #707070;
+        color: #C9A737  !important;
     }
+
+  a{
+    color: #C9A737;
+  }
+
     ul {
         list-style: none;
         color: #263E70;
@@ -38,6 +52,8 @@
     }
 
     .center {
+      margin-left: 20%;
+      width: 60%;
       margin-top: 20px;
       padding: 10px;
     }
@@ -81,7 +97,11 @@
 </style>
 <header>
     <div class="sub">
-   
+        <div class="header-topstrip-wide">
+											<span class="contact-hours"><i class="fa fa-calendar"></i>Monday-Friday 8AM – 5PM CST</span>
+												<a href="tel:956-682-3481"><span class="contact-phone"><i class="fa fa-phone"></i>956.682.3481</span></a>
+                        
+										</div>
     </div>
     <div class="logo">
         <img width="140" height="140" src="assets/public_safety_logo.webp" alt="Safety">
@@ -107,5 +127,9 @@
 <div class="center">
 
   <p>The 9-1-1 Department of the Lower Rio Grande Valley Development Councilprovides support services and equipment for 9-1-1 Call Centers in Hidalgo and Willacy Counties. Our 18 Public Safety Answering Points (PSAPs) are located at (and staffed by) area police departments, fire stations, and the sheriffs office.</p>
-
+  <div>
+      <button style="cursor: pointer;">Read more...</button>
+  </div>
 </div>
+
+<Footer />
