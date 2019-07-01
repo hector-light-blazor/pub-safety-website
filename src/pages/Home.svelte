@@ -54,6 +54,7 @@
     .center {
       margin-left: 20%;
       width: 60%;
+      height: 200px;
       margin-top: 20px;
       padding: 10px;
     }
@@ -127,8 +128,8 @@
 <div class="center">
 
   <p>The 9-1-1 Department of the Lower Rio Grande Valley Development Councilprovides support services and equipment for 9-1-1 Call Centers in Hidalgo and Willacy Counties. Our 18 Public Safety Answering Points (PSAPs) are located at (and staffed by) area police departments, fire stations, and the sheriffs office.</p>
-  <div>
-      <button style="cursor: pointer;">Read more...</button>
+  <div style="text-align: center;">
+      <button style="cursor: pointer; height: 60px;">Read more...</button>
   </div>
 </div>
 
