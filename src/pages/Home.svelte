@@ -52,11 +52,19 @@
     }
 
     .center {
-      margin-left: 20%;
-      width: 60%;
-      height: 200px;
-      margin-top: 20px;
-      padding: 10px;
+    
+
+
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      padding: 70px 0;  
+      background: #24292d;
     }
     p {
       text-align:center;
@@ -78,6 +86,12 @@
 
     .logo {
       position: absolute;height: 2px;width: 120px;margin-left: 100px;bottom: 106px;
+    }
+
+    .wrapper {
+     
+      width:60%;
+      margin: 0 auto;
     }
 
     button:hover { opacity: 0.5;;}
@@ -128,11 +142,14 @@
 <Carousel />
 
 <div class="center">
-
-  <p>The 9-1-1 Department of the Lower Rio Grande Valley Development Councilprovides support services and equipment for 9-1-1 Call Centers in Hidalgo and Willacy Counties. Our 18 Public Safety Answering Points (PSAPs) are located at (and staffed by) area police departments, fire stations, and the sheriffs office.</p>
-  <div style="text-align: center;">
-      <button style="border-radius: 10px;cursor: pointer;width: 200px; height: 60px;color: white; background: #263E70;">Read more...</button>
+  <div class="wrapper">
+      <p>The 9-1-1 Department of the Lower Rio Grande Valley Development Council provides support services and equipment for 9-1-1 Call Centers in Hidalgo and Willacy Counties. Our 18 Public Safety Answering Points (PSAPs) are located at (and staffed by) area police departments, fire stations, and the sheriffs office.</p>
+    <div style="text-align: center;">
+        <button style="border-radius: 10px;cursor: pointer;width: 200px; height: 60px;color: white; background: #263E70;">Read more...</button>
+    </div>
+  
   </div>
+  
 </div>
 
 <Footer />

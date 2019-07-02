@@ -10,7 +10,7 @@
         position: relative;
         float: right;
         z-index: 2;
-        bottom: 24px;
+        bottom: 20px;
         color: white;
         height: 20px;
         width: 24.54%;
