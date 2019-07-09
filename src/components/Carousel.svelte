@@ -6,7 +6,7 @@
 
     let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform); //What type of platform we are in...
     
-    let images = [ {svg: "assets/carousel/cell_phone_sally_friends.svg", img: "", title: "Cell Phone Sally", subTitle: "& Friends", selected: true},
+    let images = [ {svg: "assets/carousel/cell_phone_sally_friends.svg", webp: 'assets/carousel/cell_phone_sally_friends.webp', img: "", title: "Cell Phone Sally", subTitle: "& Friends", selected: true},
      {svg: null, webp: 'assets/carousel/dispatcher.webp',img: 'assets/carousel/dispatcher.jpg', selected: false, title: "Welcome", subTitle: "ECOMMS/9-1-1", readMore: true },
                    {webp: 'assets/carousel/call_if_you_can.webp',img: 'assets/carousel/call_if_you_can.jpg',title: "Text to 9-1-1",subTitle: null, selected: false}, 
                    {webp: null,img: 'assets/carousel/Karis_Lawsides.jpg', title: "Kari's Law",subTitle: null, selected: false}, 
@@ -103,12 +103,12 @@
 <style>
     img{
         
-       
+        cursor: pointer;
         height: 600;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 100%;
     }
  
     
@@ -144,7 +144,7 @@
     @media only screen and (max-width: 1370px) {
 
             img {
-                width: 80%;
+                
                 height: 450;
             }
 

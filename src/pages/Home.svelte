@@ -93,6 +93,9 @@
       width:60%;
       margin: 0 auto;
     }
+    p {
+      color: white;
+    }
 
     button:hover { opacity: 0.5;;}
 
