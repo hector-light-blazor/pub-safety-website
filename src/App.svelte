@@ -10,6 +10,6 @@
 </script>
 
 
-  <!-- <Home /> -->
-  <PubEvent />
+  <Home />
+
 

@@ -22,8 +22,7 @@
       padding-top: 150px;
       padding-bottom: 150px;
       padding: 70px 0;  
-      background: #24292d;
-    }
+          }
     p {
       text-align:center;
       color: #D5AF34;
@@ -35,9 +34,7 @@
       width:60%;
       margin: 0 auto;
     }
-    p {
-      color: white;
-    }
+    
 
     button:hover { opacity: 0.5;;}
 

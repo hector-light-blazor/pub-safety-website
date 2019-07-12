@@ -36,6 +36,7 @@
         height: 110px;
         z-index: 3;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+         font-family: Helvetica Neue; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;  
     }
 
     .header-topstrip-wide {
