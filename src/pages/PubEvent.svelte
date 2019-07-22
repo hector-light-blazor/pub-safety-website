@@ -1,92 +1,39 @@
-
-<Header />
-
-    <div class="container">
-
-        <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#event">Event Info</a></li>
-            <li class="breadcrumb-item"><a href="#main_contact">Main Contact</a></li>
-            <li class="breadcrumb-item"><a href="#alternate_contact">Alternate Contact</a></li>
-        </ol>
-        </nav>
-
-        <div class="info">
-            <h5>** All Public Event Requests must be submitted to LRGVDC at a minimum of 14 business day prior to your event. **</h5>
-            
-            <h5>** Requests between the 14 day period will not be accepted by the online system **</h5>
-            <h5>** If you are experiencing problems with your online request**</h5>
-            <h5>** please call us directly at (956) 682-3481 ext. 167 to help resolve the issues. **</h5>
-        </div>
-        <div id="event" class="info">
-          <form>
-            <label>Event Name:</label>
-            <input type="text" />
-            </form>
-        </div>
-
-        <div class="info" id="main_contact">
-        <form>
-            <label>Event Name:</label>
-            <input type="text" />
-            </form>
-        </div>
-        <div class="info" id="alternate_contact">
-            <form>
-                <label>Event Name:</label>
-                <input type="text" />
-                </form>
-        </div>
-        
-
-    </div>
-
-
-
 <style>
-    .container {
-     margin: auto;
-     width: 50%;
-     padding: 10px;
+    h1 {
+        color: #2B4988;
+        
+    }
+    h1 i {
+        color: #707070;
     }
 
-    .breadcrumb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: .75rem 1rem;
-    margin-bottom: 1rem;
-    list-style: none;
-    background-color: #e9ecef;
-    border-radius: .25rem;
-}
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        background-color: DodgerBlue;
+    }   
 
-.breadcrumb-item+.breadcrumb-item::before {
-    display: inline-block;
-    padding-right: .5rem;
-    padding-left: .5rem;
-    color: #6c757d;
-    content: "/";
-
-}
-
-    .info {
-        border-radius: 8px;
-        border: 3px solid green;
-        padding: 10px;
-        margin-bottom: 14px;
+    .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
     }
 
-    input {border-radius: 10px;width: 100%;}
-    h5 {
-        text-align: center;
-        color: red;
+    img {
+        float: right;
+        margin-right: 30px;
     }
-
 </style>
-<script>
-    import Header from "../components/Header.svelte";
+<h1><b>Public Education </b><i > Program</i></h1>
 
-</script>
+<p>
+<img width="800" src="/assets/photoPub1.webp"  alt="Kids with mascot" />
+    We attend several events which gives us the opportunity to promote and educate the public on how to properly use the 9-1-1 system.
+
+    
+</p>
+
+
