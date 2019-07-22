@@ -1,13 +1,8 @@
 <script>
-    import Header from "../components/Header.svelte";
     import Carousel from "../components/Carousel.svelte";
-    import Footer from "../components/Footer.svelte";
+   
 </script>
 <style>
-
-   
-
-   
 
     .center {
     
@@ -39,9 +34,6 @@
     button:hover { opacity: 0.5;;}
 
 </style>
-<Header />
-
-
 <Carousel />
 
 <div class="center">
@@ -55,4 +47,3 @@
   
 </div>
 
-<Footer />
