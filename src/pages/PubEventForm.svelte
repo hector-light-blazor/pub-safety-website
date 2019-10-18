@@ -1,6 +1,11 @@
+<script>
+    import EventRequest from "../components/EventRequest.svelte";
+
+</script>
 <style>
     .grid-container {
         display: grid;
+        height: 90%;
         grid-template-columns: auto auto auto;
        
     }
@@ -21,25 +26,7 @@ h3{
 }
 
 
-ul.horizontal-list {
-	min-width: 696px;
-	list-style: none;
-	
-	}
-	ul.horizontal-list li {
-		display: inline;
-        cursor: pointer;
-	}
-    button {
-      height: 30px;
-      width: 30px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    .active {
-        color: white;
-        background: #2E3257;
-    }
+
 
 </style>
 
@@ -57,18 +44,7 @@ ul.horizontal-list {
             <p>** please call us directly at (956) 682-3481 ext. 167 to help resolve the issues. **</p>
         </div>
         <h3 style="text-align: center; color: #263E70;cursor: pointer;"><img width="18" height="18" src="/assets/png/calendar.png" alt="Calendar" />Click to view scheduled events</h3>
-            <div style="margin-left: 200px;width: 600px; height: 300px; border-radius: 20px;background: #F5F5F5;">
-                 <div style="height: 10px; width: 100%; border-top-left-radius: 20px; border-top-right-radius:20px;background: #2E3257; ">
-                 </div>
-                 <ul class="horizontal-list">
-                    <li><button class="active">1</button> EVENT INFORMATION</li>
-                    <li><button>2</button> CONTACT</li>
-                    <li><button>3</button> EVENT LOCATION</li>
-                 </ul>
-                 <form>
-                 </form>
-            </div>
-       
+        <EventRequest />     
     </div>
     <div class="grid-item">
         <img style="float:right;" width="300" src="/assets/LRGVDCART_WORK.webp" alt="lrgvdc" />
