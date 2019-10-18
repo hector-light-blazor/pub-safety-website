@@ -10,10 +10,14 @@
 	setTimeout(() => {
 		splash = false;
 	}, 500);
+
+	function handleURL() {
+		
+	}
 </script>
 
 <Header />
-  <!-- <Home /> -->
+<!-- <Home /> -->
 <!-- <PubEvent /> -->
 <PubEventForm />
 
