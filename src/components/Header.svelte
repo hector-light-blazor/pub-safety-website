@@ -106,6 +106,10 @@
         display: none;
       }
 
+      .header-topstrip-wide {
+        display: none;
+      }
+
       .logo {
         position: absolute;
         height: 2px;width: 120px;

@@ -2,16 +2,26 @@
   import {  fly } from 'svelte/transition';
  
   import ButtonNext from "./ButtonNext.svelte";
+  import CalendarPicker from "./CalendarPicker.svelte";
 
   let selectedIndex = 0;
   let event_name = "";
+  let from_date = "";
+  let to_date = "";
+  let address = "";
+  let setup_time = "";
+  let event_start = "";
+  let event_end = "";
+  let fileName = "";
+  let files;
 
   function handleFile(e) {
 
     const target = e.target || e.srcElement;
     var found = false;
     for(var file of target.files){
-      
+      files = file;
+      fileName = file.name;
       let name = file.name.toLowerCase();
       if(!name.includes(".pdf")) {
         alert("Please attach pdf only");
@@ -31,7 +41,7 @@
     position: relative;
     left: 50%;
     margin-left: -40%;
-    width: 80%; height: 64%; border-radius: 20px;background: #F5F5F5;
+    width: 80%; height: auto; border-radius: 20px;background: #F5F5F5;
   }
   ul.horizontal-list {
     min-width: 696px;
@@ -79,7 +89,7 @@
                  <div style="height: 20px; width: 100%; border-top-left-radius: 20px; border-top-right-radius:20px;background: #2E3257; ">
                  </div>
                  <ul class="horizontal-list">
-                    <li><button on:click="{() =>{selectedIndex = 0;}}" class:active={selectedIndex == 0}>1</button> EVENT INFORMATION</li>
+                    <li><button on:click="{() =>{selectedIndex = 0; console.log(Elefile)}}" class:active={selectedIndex == 0}>1</button> EVENT INFORMATION</li>
                     <li><button on:click="{() =>{selectedIndex = 1;}}" class:active={selectedIndex == 1}>2</button> CONTACT INFORMATION</li>
                     <li><button on:click="{() =>{selectedIndex = 2;}}" class:active={selectedIndex == 2}>3</button> ADDITIONAL INFORMATION</li>
                  </ul>
@@ -98,24 +108,24 @@
 
                               <div class="group">
                                   <label>From Date:</label>
-                                  <input type="text" />
+                                  <input bind:value={from_date} type="text" />
                                   <small id="dateHelp" class="form-text text-muted">The event needs to be 14 business day or more in advance.</small>
                               </div>
 
                               <div class="group">
                                   <label>To Date:</label>
-                                  <input type="text" />
+                                  <input bind:value={to_date} type="text" />
                                   
                               </div>
 
                               <div class="group">
                                   <label>Address of Event:</label>
-                                  <input type="text" />
+                                  <input bind:value={address} type="text" />
                               </div>
 
                               <div class="group">
                                   <label>Setup Time:</label>
-                                  <select name="StpTime" class="form-control" id="StpTime" required="">
+                                  <select bind:value={setup_time} name="StpTime" class="form-control" id="StpTime" required="">
                                         <option></option>
                                         <option>5:00 AM</option>
                                         <option>5:30 AM</option>
@@ -162,7 +172,7 @@
 
                               <div class="group">
                                   <label>Event Start Time:</label>
-                                  <select name="StpTime" class="form-control" id="StpTime" required="">
+                                  <select bind:value={event_start} name="StpTime" class="form-control" id="StpTime" required="">
                                         <option></option>
                                         <option>5:00 AM</option>
                                         <option>5:30 AM</option>
@@ -209,7 +219,7 @@
 
                               <div class="group">
                                   <label>Event End Time:</label>
-                                  <select name="StpTime" class="form-control" id="StpTime" required="">
+                                  <select bind:value={event_end} name="StpTime" class="form-control" id="StpTime" required="">
                                         <option></option>
                                         <option>5:00 AM</option>
                                         <option>5:30 AM</option>
@@ -254,8 +264,14 @@
                                   </select>
                               </div>
                               <div class="group">
-                                  <label>Please attach event flier. (Only PDF)</label>
-                                  <input accept="application/pdf" on:change={handleFile} type="file" />
+                                  {#if fileName}
+                                     <!-- content here -->
+                                     <label>{fileName}</label>
+                                  {:else}
+                                     <label>Please attach event flier. (Only PDF)</label>
+                                     <input  accept="application/pdf" on:change={handleFile} type="file" />
+                                  {/if}
+                                  
                               </div>
                            </div>
                         {:else if  selectedIndex == 1}
