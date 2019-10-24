@@ -3,6 +3,7 @@
     import { fade } from 'svelte/transition';
     import DropDown from "./DropDown.svelte";
     import LoadingCube from './LoadingCube.svelte';
+    import {navigateTo} from "./svero/main";
 
     let iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform); //What type of platform we are in...
     
@@ -99,6 +100,17 @@
     function onErrorIMG (event) {
 
     }
+
+    function handleHyperLink(event) {
+        console.log(event);
+        let img = event.target || event.srcElement;
+        console.log(img.src);
+        if(img.src.indexOf("cell_phone_sally_friends") > 0) {
+            navigateTo("#EventRequest");
+        }
+
+      //  navigateTo
+    }
 </script>
 <style>
     img{
@@ -173,15 +185,15 @@
                 <h2>{Title}</h2>
                 <div  class="blue" style="position: absolute;width: 170px;bottom: 184px;"></div>
                 <h3>{SubTitle}</h3>
-                <a style="color: #D5AF34; cursor: pointer;">READ MORE</a>
+                <a on:click|preventDefault href="none" style="color: #D5AF34; cursor: pointer;">READ MORE</a>
                 </div>
     </div>
 
     {#if fadeOut}
          <!-- content here -->
-         <img on:error="{onErrorIMG}" class="animate-zoom" style="display: {display}"   src="{selected}" alt="TEST">
+         <img on:error="{onErrorIMG}" on:click={handleHyperLink} class="animate-zoom" style="display: {display}"   src="{selected}" alt="TEST">
     {:else} 
-        <div class="cover" style="background-color:#263E70 !important; ">
+        <div class="cover">
           
         </div>
     {/if}
