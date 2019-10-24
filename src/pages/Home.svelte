@@ -1,13 +1,13 @@
 <script>
     import Carousel from "../components/Carousel.svelte";
-   
+    import Box from "../components/Box.svelte";
 </script>
 <style>
 
     .center {
     
 
-
+      background: #e7ebed;
       width: 100%;
       padding-right: 15px;
       padding-left: 15px;
@@ -31,7 +31,13 @@
     }
     
 
-    button:hover { opacity: 0.5;;}
+    button:hover { opacity: 0.5;}
+    .flex-grid {
+      padding-left: 20%;
+      padding-right: 20%;
+      display: flex;
+      justify-content: space-between;
+    }
 
 </style>
 <Carousel />
@@ -44,6 +50,13 @@
     </div>
   
   </div>
+
+  <div class="flex-grid">
+      <Box />
+  <Box />
+  <Box />
   
+  </div>
+
 </div>
 
