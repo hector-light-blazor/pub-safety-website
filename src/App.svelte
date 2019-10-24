@@ -30,6 +30,10 @@
     <PublicEducation />
   </Route>
 
+  <Route path="#EventRequest">
+    <PubEventForm />
+  </Route>
+
   
 </Router>
 
