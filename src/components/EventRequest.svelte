@@ -89,7 +89,7 @@
                  <div style="height: 20px; width: 100%; border-top-left-radius: 20px; border-top-right-radius:20px;background: #2E3257; ">
                  </div>
                  <ul class="horizontal-list">
-                    <li><button on:click="{() =>{selectedIndex = 0; console.log(Elefile)}}" class:active={selectedIndex == 0}>1</button> EVENT INFORMATION</li>
+                    <li><button on:click="{() =>{selectedIndex = 0; }}" class:active={selectedIndex == 0}>1</button> EVENT INFORMATION</li>
                     <li><button on:click="{() =>{selectedIndex = 1;}}" class:active={selectedIndex == 1}>2</button> CONTACT INFORMATION</li>
                     <li><button on:click="{() =>{selectedIndex = 2;}}" class:active={selectedIndex == 2}>3</button> ADDITIONAL INFORMATION</li>
                  </ul>
