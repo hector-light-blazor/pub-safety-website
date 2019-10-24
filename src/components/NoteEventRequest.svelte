@@ -1,4 +1,5 @@
 <script>
+    import { blur } from 'svelte/transition';
     export let title = "Hello World";
     export let notes = "Test";
     let enable = true;
@@ -107,7 +108,7 @@ ol{
         </ol>
     </div>
 {:else}
-     <div on:click="{()=>{enable= true;}}" class="wrapper">
+     <div transition:blur="{{duration: 800, amount: 10}}" on:click="{()=>{enable= true;}}" class="wrapper">
         NOTE
      </div>
 {/if}
