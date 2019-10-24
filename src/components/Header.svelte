@@ -11,12 +11,15 @@
     </div>
     <div class="menu">
         <ul>
-            <li class="grow">HOME</li>
+            <li class="grow" on:click="{()=>{navigateTo("/")}}">
+               HOME</li>
             <li>LOCATION VALIDATION</li>
             <li>MAPPING</li>
             <li>DATABASE</li>
             <li>SYSTEM & PSAP OPERATIONS</li>
-            <li>PUBLIC EDUCATION</li>
+            <li on:click="{()=>{navigateTo("#publicEducation")}}">
+                            PUBLIC EDUCATION
+            </li>
             <li>TRAINING</li>
             
         </ul>
@@ -25,6 +28,11 @@
 </header>
 
 <div style="height: 110px;width:100%;"></div>
+
+<script>
+   import {  navigateTo } from './svero/main';
+
+</script>
 
 
 <style>
